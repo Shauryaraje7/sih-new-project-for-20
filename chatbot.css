@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.nav{
+    position: fixed;
+    top: 0px;
+
+}
+
+.chat-container {
+    width: 600px; /* Increased width */
+    height: 700px; /* Added height */
+    background-color: #fff;
+    border-radius: 15px; /* Slightly more rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Increased shadow for better emphasis */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+.chat-header {
+    background-color: #90EE90;;
+    color: white;
+    padding: 20px; /* Increased padding */
+    text-align: center;
+    font-size: 24px; /* Larger text size */
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-box {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Increased spacing between messages */
+}
+
+.message img {
+    width: 50px; /* Increased avatar size */
+    height: 50px; /* Increased avatar size */
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.message.user {
+    justify-content: flex-end;
+}
+
+.message.user img {
+    order: 2;
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.message.bot img {
+    background-color: #4CAF50;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.message .text {
+    background-color: #f1f1f1;
+    padding: 15px; /* Increased padding for messages */
+    border-radius: 15px; /* Slightly more rounded corners */
+    max-width: 70%;
+    font-size: 16px; /* Increased text size */
+}
+
+.message.user .text {
+    background-color: #e0ffe0;
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 15px; /* Increased padding for input */
+    border: none;
+    font-size: 16px; /* Increased input text size */
+}
+
+.chat-input button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 20px; /* Increased padding for button */
+    cursor: pointer;
+    font-size: 16px; /* Increased button text size */
+}
+
+.chat-input button:hover {
+    background-color: #45a049;
+}
+/* ================================================================================ */
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+.message.user {
+    justify-content: flex-end;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.text {
+    max-width: 70%;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.message.user .text {
+    background-color: #d1f1d1;
+}
+
+#chat-box {
+    overflow-y: scroll;
+    max-height: 400px;
+    padding: 10px;
+}
+#chat-box {
+    overflow-y: auto;
+    max-height: calc(100vh - 200px); /* Adjust this based on your layout */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#input-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chat-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    max-width: 400px; /* Adjust based on your layout */
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.message.user {
+    justify-content: flex-end;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.text {
+    max-width: 70%;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.message.user .text {
+    background-color: #d1f1d1;
+}

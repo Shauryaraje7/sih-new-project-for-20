@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers' Assistant Chatbot</title>
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsiv-nav.css">
+</head>
+<body onload="initializeChat()">
+
+<!-- ==================rsponsive nav=============================== -->
+
+<nav class="navbar">
+  
+    <div class="brand-title"> <img class="logo"  src="assets/logo.png" alt="">  Sushruta AI</div>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="chatbot.html">Chat</a></li>
+            <li><a href="sign.html">Login</a></li>
+            <li><a href="sign.html">Sign Up</a></li>
+        </ul>
+    </div>
+  </nav>
+  
+  
+  <!-- ==================rsponsive nav ENDS  =============================== -->
+  
+      <!-- ====================nav============================= -->
+      <nav class="nav" >
+          <div class="logo">
+              <img src="assets/logo.png" alt="Logo">
+              <span>Sushruta AI</span>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li class="dropdown">
+                <a href="chatbot.html">Chat</a>
+                <div class="dropdown-content">
+                    <a href="chatbot.html">Option 1</a>
+                    <a href="chatbot.html">Option 2</a>
+                </div>
+            </li>
+            <li><a href="sign.html">Login</a></li>
+            <li><a href="sign.html" class="signup-btn">Sign In</a></li>
+          </ul>
+      </nav>
+      <!-- ================nav ends======================= -->
+
+
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>Ask about your problem here</h3>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <!-- Initial AI message will appear here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Describe the plant's symptoms..." onkeypress="checkEnter(event)">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
